@@ -1,0 +1,33 @@
+/*body {
+    
+}
+
+footer {
+    margin: 10px 0;
+}*/
+
+.navbar-brand {
+    padding: 0px;
+}
+.list-group-item {
+    font-size:small;
+}
+
+html,body {
+ color:#242729;
+ font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;
+ font-size:13px;
+ line-height:1.30769231
+}
+body {
+ -webkit-box-sizing:border-box;
+ box-sizing:border-box;
+ min-height:100%;
+ background:#FFF
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}

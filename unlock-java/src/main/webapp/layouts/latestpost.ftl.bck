@@ -1,0 +1,48 @@
+<div class="col-sm-7 push-sm-2">
+    <article>
+    <#list latest as latest>
+        <div class="card mb-9">
+                <a href="${latest.post_cat_uri}/${latest.post_uri}">
+                    <h2  class="card-header">${latest.post_title}</h2></a>
+            <div class="card-block">
+                <div class="row">
+                    <div class="group1 col-sm-6 col-md-6">
+                        <span class="glyphicon glyphicon-folder-open"></span>
+                        <a class="badge badge-pill badge-success" href="${springMacroRequestContext.contextPath}/category/${latest.post_category}">${latest.post_category?replace("-"," ")?capitalize}</a>
+                        </div>
+                    <div class="group2 col-sm-6 col-md-6">
+                        <i class="fa fa-eye"></i> ${latest.post_views} Views
+                        <i class="fa fa-calendar"></i> ${latest.post_created_date}
+                        </div>
+                    </div>
+                <hr>
+                <p class="card-text">${latest.post_expert?substring(0, 250)}...</p>
+                    <p class="text-right">
+                        <a class="btn btn-info" href="${latest.post_cat_uri}/${latest.post_uri}">
+                            Continue...
+                            </a>
+                        </p>
+                <div class="card-footer text-muted">
+                    Tags: 
+                    <#list latest.post_tags?split(",") as x>
+                <span class="badge badge-pill badge-default">${x}</span>
+                    </#list>
+                    </div>
+                </div>
+            </div>
+    </#list>
+        <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+        </article>
+    </div>

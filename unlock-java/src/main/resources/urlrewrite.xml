@@ -1,0 +1,36 @@
+<urlrewrite>
+    <!--    <rule>
+        <name>Domain Name Check</name>
+        <condition name="host" operator="notequal">www.userdomain.com</condition>
+        <from>^(.*)$</from>
+        <to type="redirect">http://www.userdomain.com$1</to>
+    </rule>-->
+    <!--    <rule>
+        <from>^/post/([0-9]+)/(.*)</from>
+        <to>/post.htm?id=$1</to>
+    </rule>-->
+      <rule>
+        <from>^/java/(.*)</from>
+        <to>/post/java/$1/</to>
+    </rule>
+      <rule>
+        <from>^/spring/(.*)</from>
+        <to>/post/spring/$1/</to>
+    </rule>
+      <rule>
+        <from>^/hibernate/(.*)</from>
+        <to>/post/hibernate/$1/</to>
+    </rule>
+    <rule>
+        <from>^/restful/(.*)</from>
+        <to>/post/restful/$1/</to>
+    </rule>
+      <rule>
+        <from>^/servlet/(.*)</from>
+        <to>/post/servlet/$1/</to>
+    </rule>
+    <rule>
+        <from>^/category/(.*)</from>
+        <to>/cat.htm?uri=$1</to>
+    </rule>
+</urlrewrite>
