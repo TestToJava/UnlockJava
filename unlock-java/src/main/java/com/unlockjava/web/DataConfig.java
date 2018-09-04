@@ -33,7 +33,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaRepositories
 @EnableTransactionManagement
 @EnableSpringDataWebSupport
-@PropertySource("classpath:application.properties")
 class DataConfig {
 
 	@Autowired
