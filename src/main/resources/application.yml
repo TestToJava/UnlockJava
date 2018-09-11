@@ -1,7 +1,13 @@
 spring:
- profiles.active: prod
+ profiles.active: uat
 
-
+ freemarker:
+    template-loader-path: /
+    suffix: .ftl             
+    
+ messages:
+    basename: validation  
+    
 application:
   title: UnlockJava - Java Tutorial Important Interview FAQ, JAVA Internal Implementations
   desc: UnlockJava gives you fully unlocked access to Java Concepts, Latest Interview Questions, Answers, Java Interview Programs. Deep Tutorials on Spring, Hibernate, RestFul Web Services, SOAP, Servlet, JSP, Freemarker, Velocity
@@ -23,12 +29,7 @@ spring:
     type: trace   
     dialect: org.hibernate.dialect.MySQLDialect
     connection.pool_size: 10
- freemarker:
-    template-loader-path: /
-    suffix: .ftl             
-    
- messages:
-    basename: validation   
+ 
  
  datasource:
     driver: com.mysql.jdbc.Driver
@@ -36,6 +37,26 @@ spring:
     username: root
     password: root
 
+---
+spring:
+ profiles: uat
+ 
+ jpa:
+  hibernate:
+    show_sql: true
+    ddl-auto: true
+    format_sql: true
+    type: trace   
+    dialect: org.hibernate.dialect.MySQLDialect
+    connection.pool_size: 10
+ 
+ 
+ datasource:
+    driver: com.mysql.jdbc.Driver
+    url: jdbc:mysql://db4free.net:3306/dibyajyoti
+    username: dibyajyoti
+    password: 12345678#uj
+    
 ---
 spring:
  profiles: prod
@@ -48,12 +69,7 @@ spring:
     type: trace   
     dialect: org.hibernate.dialect.MySQLDialect
     connection.pool_size: 10
- freemarker:
-    template-loader-path: /
-    suffix: .ftl             
-    
- messages:
-    basename: validation   
+ 
  
  datasource:
     driver: com.mysql.jdbc.Driver
