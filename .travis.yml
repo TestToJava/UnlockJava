@@ -8,5 +8,5 @@ deploy:
     secure: "lxwLC7iCUZQ6LTh9b08fGA8hjLNUQcB7YBigEYSK"
   region: "us-east-2"  
   app: "Unlock"
-  env: "e-f3wzdwskkt"
+  env: "Unlock-env"
   bucket_name: "elasticbeanstalk-us-east-2-349908562903"
