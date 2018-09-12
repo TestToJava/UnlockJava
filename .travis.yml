@@ -3,7 +3,7 @@ after_success:
   - mvn clean test jacoco:report coveralls:report
 deploy:
   provider: elasticbeanstalk
-  access_key_id: "AKIAIQ7XGCBHHO6MWQYQ"
+  access_key_id: "AKIAJ7ERIPC2XZ5PPLTQ"
   secret_access_key:
     secure: "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"
   region: "us-east-2"  
