@@ -1,11 +1,10 @@
 language: java
-after_success:
-  - mvn clean test jacoco:report coveralls:report
+
 deploy:
   provider: elasticbeanstalk
-  access_key_id: "AKIAJ7ERIPC2XZ5PPLTQ"
+  access_key_id: "AKIAIC4TEJJR2YK72NNA"
   secret_access_key:
-    secure: "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"
+    secure: "mJqOEo9l2dRNgvi/gWMPoORspRi0RLJ25sKITJrN"
   region: "us-east-2"  
   app: "UJ"
   env: "Uj-env"
