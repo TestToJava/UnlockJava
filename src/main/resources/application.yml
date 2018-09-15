@@ -1,8 +1,8 @@
 spring:
- profiles.active: uat
+ profiles.active: dev
 
  freemarker:
-    template-loader-path: /
+    template-loader-path: /WEB-INF/
     suffix: .ftl             
     
  messages:
