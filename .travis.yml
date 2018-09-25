@@ -1,11 +1,11 @@
 language: java
 
-deploy:
-  provider: elasticbeanstalk
-  access_key_id: "AKIAIC4TEJJR2YK72NNA"
-  secret_access_key:
-    secure: "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"
-  region: "us-east-2"  
-  app: "UJ"
-  env: "Uj-env"
-  bucket_name: "elasticbeanstalk-us-east-2-349908562903"
+# deploy:
+#   provider: elasticbeanstalk
+#   access_key_id: "AKIAIC4TEJJR2YK72NNA"
+#   secret_access_key:
+#     secure: "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"
+#   region: "us-east-2"  
+#   app: "UJ"
+#   env: "Uj-env"
+#   bucket_name: "elasticbeanstalk-us-east-2-349908562903"
